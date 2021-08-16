@@ -87,3 +87,23 @@
         width: 100%;
     }
 }
+
+@media (max-width: 762px) {
+    .inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-header-content {
+        width: 100%;
+    }
+    .header-buttons {
+        display: flex;
+        align-items: center;
+    }
+    .products {
+        width: 100%;
+    }
+    .customer-comments {
+        width: 100%;
+    }
+}
