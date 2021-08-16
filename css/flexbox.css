@@ -67,6 +67,9 @@
     .inner {
         flex-direction: column;
     }
+    .main-header > .inner {
+        flex-direction: column-reverse;
+    }
     .main-header-content {
         width: 100%;
     }
@@ -92,6 +95,9 @@
     .inner {
         flex-direction: column;
         justify-content: center;
+    }
+    .main-header > .inner {
+        flex-direction: column-reverse;
     }
     .main-header-content {
         width: 100%;
