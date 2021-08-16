@@ -1,0 +1,175 @@
+:root {
+    --mainBg: #f9e2e8;
+    --topHeaderBg: #26292e;
+    --headerBg: #e7718b;
+    --headerHighlight: #f492ab;
+    --headerColor: white;
+    --section1Bg: #f4f4f6;
+    --section1SubHeader: #545456;
+    --section2Bg: white;
+    --textColor: #444;
+    --buttonTopShadow: #90858b;
+    --buttonDark: #17201d;
+    --buttonLight: #5e5d5b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--mainBg);
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.inner {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.product-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 165px;
+    font-size: 5em;
+    background: #444;
+    border: 10px solid #bbc5d1;
+    box-shadow: 0 2px 5px black;
+}
+
+.glass {
+    width: 30%;
+}
+
+/* header section */
+
+.top-header,
+.footer {
+    background: var(--topHeaderBg);
+    color: white;
+}
+
+.title {
+    font-family: "Butterfly Kids", sans-serif;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.social-img {
+    width: 3em;
+    height: 3em;
+}
+
+.main-header {
+    background: radial-gradient(ellipse at top, var(--headerHighlight), 40%, var(--headerBg));
+}
+
+.main-header-content {
+    width: 40%;
+    color: white;
+}
+
+.main-header-button {
+    margin: 12px;
+    padding: 0;
+    width: 35%;
+    height: 3em;
+    background: linear-gradient(var(--buttonLight), var(--buttonDark));
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 4px 2px var(--buttonTopShadow);
+    cursor: pointer;
+}
+
+.main-header-button:active {
+    background: var(--buttonLight);
+}
+
+.header-figure {
+    width: 50%;
+}
+
+.laptop {
+    width: 100%;
+}
+
+/* main section */
+
+.section1 {
+    background: var(--section1Bg);
+}
+
+.section1 h2 {
+    color: var(--section1SubHeader);
+}
+
+.section1 img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.section2 {
+    background: var(--section2Bg);
+}
+
+.section2-header {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product-list-item {
+    position: relative;
+}
+
+.section1-text,
+.customer-comment {
+    color: var(--textColor);
+    font-family: sans-serif;
+}
+
+.product-list-item::before {
+    z-index: -1;
+    position: absolute;
+    bottom: 20px;
+    content: "";
+    width: 50%;
+    background: #777;
+    box-shadow: 3em 3em 1em black;
+    transform: rotate(8deg);
+}
+
+.comment-attribution {
+    font-weight: bold;
+    color: black;
+}
