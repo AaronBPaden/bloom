@@ -62,3 +62,28 @@
 .section2 {
     padding-bottom: 2em;
 }
+
+@media (max-width: 570px) {
+    .inner {
+        flex-direction: column;
+    }
+    .main-header-content {
+        width: 100%;
+    }
+    .header-buttons {
+        display: flex;
+        align-items: center;
+    }
+    .products {
+        width: 100%;
+    }
+    .products-list {
+        flex-direction: column;
+    }
+    .products-list-item {
+        width: 100%;
+    }
+    .customer-comments {
+        width: 100%;
+    }
+}
