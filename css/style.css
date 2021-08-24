@@ -56,7 +56,8 @@ h3 {
 
 .title {
     font-family: "Butterfly Kids", sans-serif;
-    font-size: 3em;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
     text-transform: capitalize;
 }
 
@@ -83,6 +84,7 @@ h3 {
 
 .main-header-button {
     padding: 0.5rem;
+    width: 12rem;
     background: linear-gradient(var(--buttonLight), var(--buttonDark));
     color: white;
     border: none;
@@ -99,6 +101,10 @@ h3 {
 
 .section1 {
     background: var(--section1Bg);
+}
+
+.section1-icon {
+    width: 2rem;
 }
 
 .section1 h2 {
